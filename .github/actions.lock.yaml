@@ -1,0 +1,29 @@
+version: 1
+generated_at: 2026-05-25T13:28:07Z
+internal: []
+trusted:
+  - action: actions/cache
+    refs:
+      - v4
+    occurrences:
+      v4:
+        .github/workflows/test.yml:
+          - jobs.test.steps.[2].uses
+  - action: actions/checkout
+    refs:
+      - v2
+    occurrences:
+      v2:
+        .github/workflows/test.yml:
+          - jobs.test.steps.[0].uses
+external:
+  - action: erlef/setup-elixir
+    refs:
+      - v1
+    occurrences:
+      v1:
+        .github/workflows/test.yml:
+          - jobs.test.steps.[1].uses
+local: []
+docker: []
+dynamic: []
